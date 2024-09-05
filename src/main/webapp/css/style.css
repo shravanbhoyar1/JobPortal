@@ -3,6 +3,7 @@ html
 {
 	border: 0px;
 	margin: 0px;
+
 }
 
 .gray
@@ -38,6 +39,12 @@ html
 {
 	border: 1px solid gray;
 	margin-top: 20px;
+}
+.first-img{
+	height: 1220px"; 
+	width="100%"; 
+	z-index: 10;  
+	position: fixed;
 }
 .cards{
 	height: 300px;

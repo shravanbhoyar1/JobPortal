@@ -8,22 +8,42 @@
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 </head>
 <body>
-  <div class="container-fluid">
-	<div class="header">
-	    <span class="web-logo">Hire Hub</span>
-		<nav class="navbar">
-          <a href="../index.html">Home</a>
-          <a href="aboutus.html">About</a>
-          <a href="../pages/book.html">Ticket Booking</a>
-          <a href="../pages/contactus.html">Contact Us</a>
-       </nav>
-      <form action="#" class="search-bar">
-          <input type="text" placeholder="Search...">
-          <buttom type="submit"><i class='bx bx-search'></i>
-             
-          </buttom>
-      </form>
-	</div>
-	</div>
+    <nav class="navbar">
+        <a href="#" class="logo">JobPortal</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Jobs</a>
+                <div class="dropdown">
+                    <a href="#">IT Jobs</a>
+                    <a href="#">Marketing Jobs</a>
+                    <a href="#">Finance Jobs</a>
+                </div>
+            </li>
+            <li><a href="#">Companies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search jobs...">
+            <button>Search</button>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-signup">Sign Up</button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
