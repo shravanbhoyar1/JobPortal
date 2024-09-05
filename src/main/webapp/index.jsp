@@ -16,10 +16,7 @@
 			<jsp:include page="header.jsp"></jsp:include>
 			<jsp:include page="menubar.jsp"></jsp:include>
 			
-			<div class="row" style="border: 2px solid black;">
-				<img src="images/first.jpg" style="height: 1220px"; width="100%"; z-index: 10;  position: fixed;/>
-			</div>
-			
+		
 			<!-- ==============search job div starts================= -->
 			<div class="row ">
 				<div class="col-md-3">

@@ -11,7 +11,7 @@
     <nav class="navbar">
         <a href="#" class="logo">JobPortal</a>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.jsp">Home</a></li>
             <li>
                 <a href="#">Jobs</a>
                 <div class="dropdown">
@@ -30,7 +30,7 @@
         </div>
         <div class="auth-buttons">
             <button class="btn btn-login">Login</button>
-            <button class="btn btn-signup">Sign Up</button>
+            <a href="register.jsp"><button class="btn btn-signup">Register</button></a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div></div>

@@ -1,0 +1,23 @@
+
+
+.reg_div_design
+{
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top:60px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    border-radius: 6px
+}
+.reglog_tf_design
+{   
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 350px;
+    padding: 7px 10px;
+}
+.reglog_tf_design:focus
+{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
