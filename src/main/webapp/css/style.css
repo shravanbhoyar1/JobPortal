@@ -1,0 +1,60 @@
+
+html
+{
+	border: 0px;
+	margin: 0px;
+}
+
+.gray
+{
+	background-color: gray;
+}
+.black
+{
+	background-color: black;
+}
+
+.textfield_design
+{
+	padding: 5px 10px;
+	width: 300px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.textfield_design:focus
+{
+	background-color: #f2f2f2;
+}
+.job_search_div
+{
+	text-align: center;
+	box-shadow: 0 0 1px #FF0000, 0 0 5px #0000FF;
+	margin-top: 70px;
+	padding: 100px;
+	height: 150px;
+}
+.display_job_div
+{
+	border: 1px solid gray;
+	margin-top: 20px;
+}
+.cards{
+	height: 300px;
+	width:450px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: red;
+	margin-top: 12px;
+	padding: 15px;
+	
+}
+
+
+
+
+
+
+
+
+

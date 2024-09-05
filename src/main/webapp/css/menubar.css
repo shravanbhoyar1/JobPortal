@@ -1,0 +1,22 @@
+.menubardiv
+{
+	background: linear-gradient(to bottom, #ffffff 40%, #ccffff 100%);
+}
+#mynavbar ul
+{
+	list-style: none;
+}
+#mynavbar ul li
+{
+	float: left;
+	padding: 10px;
+}
+#mynavbar ul li a
+{
+	padding: 10px 20px;
+}
+#mynavbar ul li a:hover
+{
+	color: red;
+	text-decoration: none;
+}
