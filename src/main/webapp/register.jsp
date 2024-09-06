@@ -11,14 +11,14 @@
         <link rel="stylesheet" type="text/css" href="css/register.css" />
 </head>
 <body>
+
        <div class="container-fluid">
             <jsp:include page="header.jsp"></jsp:include>
-            <jsp:include page="menubar.jsp"></jsp:include>
-
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <div class="reg_div_design">
+			
+                <div class="row ">
+                    <div class="col-md-3 "></div>
+                    <div class="col-md-6 "><br><br><br><br><br><br>
+                        <div class="reg_div_design ">
                             <form method="POST" action="reg">
                                 <br> <h2> Register Here </h2> <br>
                                 <input type="text" placeholder="Enter Name" name="name1" class="reglog_tf_design" /> <br> <br>
@@ -43,5 +43,6 @@
 
             <jsp:include page="footer.jsp"></jsp:include>
         </div>
+      
 </body>
 </html>

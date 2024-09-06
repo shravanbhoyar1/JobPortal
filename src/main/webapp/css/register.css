@@ -1,14 +1,27 @@
-
-
+ body {
+    background-image: url('https://img.freepik.com/premium-photo/businessman-pressing-multimedia-type-modern-buttons-with-virtual-background-document-management-system-dms-searching-managing-corporate-files-information_1210714-482.jpg?w=1380'); /* Correctly reference the image */
+     background-size: cover; /* Ensures the image covers the entire viewport */
+     background-position: center; /* Centers the image */
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     height: 100vh; /* Full viewport height */
+     margin: 0; /* Removes default margins */
+     background-attachment: fixed; /* Keeps the image fixed during scroll */
+    
+ }
 .reg_div_design
 {
     text-align: center;
     background-color: #f0f0f0;
-    margin-top:60px;
     -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
-    border-radius: 6px
+    border-radius: 6px;
+    
+    
+}
+.top-margin
+{
+	margin-top: 10px;
 }
 .reglog_tf_design
 {   
