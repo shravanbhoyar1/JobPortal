@@ -29,7 +29,7 @@
             <button>Search</button>
         </div>
         <div class="auth-buttons">
-            <button class="btn btn-login">Login</button>
+            <a href="login.jsp"><button class="btn btn-login">Login</button></a>
             <a href="register.jsp"><button class="btn btn-signup">Register</button></a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
