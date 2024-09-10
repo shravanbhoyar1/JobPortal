@@ -16,8 +16,8 @@
             <div class="reg_div_design">
                 <form method="POST" action="login">
                     <h2>Login Here</h2>
-                    <input type="text" placeholder="Enter Email" name="email1" class="reglog_tf_design" required />
-                    <input type="password" placeholder="Enter Password" name="pass1" class="reglog_tf_design" required />
+                    <input type="text" placeholder="Enter Email" name="email1" class="reglog_tf_design" />
+                    <input type="password" placeholder="Enter Password" name="pass1" class="reglog_tf_design" />
                     <div class="checkbox-container">
                         <input type="checkbox" name="rememberme1" value="rememberme" id="rememberMe" />
                         <label for="rememberMe">Remember Me</label>
