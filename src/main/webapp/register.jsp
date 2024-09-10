@@ -26,15 +26,35 @@
                         var gender2=document.regform.gender1.value;
                         //var fields2=document.regform.field1.value;
                         var city2=document.regform.city1.value;
-
+                        
+                        var name_pattern=/^[a-zA-Z]{3,30}$/;
+                        var email_pattern = /^([a-zA-Z0-9])(([a-zA-Z0-9])*([\._\+-])*([a-zA-Z0-9]))*@(([a-zA-Z0-9\-])+(\.))+([a-zA-Z]{2,4})+$/;
+                        var password_pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+                        
+                        
+                        if(!name2.match(name_pattern))
+                        {
+                            document.getElementById('name_error').innerHTML="Name is not properly formated";
+                            flag=false;
+                        }
                         if(name2==="")
                         {
                             document.getElementById('name_error').innerHTML="Name cannot be empty";
                             flag=false;
                         }
+                        if(!email2.match(email_pattern))
+                        {
+                            document.getElementById('email_error').innerHTML="Email is not properly formatted";
+                            flag=false;
+                        }
                         if(email2==="")
                         {
                             document.getElementById('email_error').innerHTML="Email cannot be empty";
+                            flag=false;
+                        }
+                        if(!pass2.match(password_pattern))
+                        {
+                            document.getElementById('password_error').innerHTML="Password is not properly formatted (should contain 0-9,special characters)";
                             flag=false;
                         }
                         if(pass2==="")

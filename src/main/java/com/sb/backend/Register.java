@@ -44,7 +44,7 @@ public class Register extends HttpServlet
             
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/jobportal","root","Shravan@123");
             System.out.println("connection created successfully");
-            PreparedStatement ps=con.prepareStatement("insert into register values(?,?,?,?,?,?)");
+            PreparedStatement ps=con.prepareStatement("insert into register(name,email,password,gender,fields,city) values(?,?,?,?,?,?)");
             ps.setString(1, name2);
             ps.setString(2, email2);
             ps.setString(3, pass2);
