@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>header</title>
+<title>profile header</title>
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 </head>
 <body>
@@ -29,8 +29,8 @@
             <button>Search</button>
         </div>
         <div class="auth-buttons">
-            <a href="login.jsp"><button class="btn btn-login">Login</button></a>
-            <a href="register.jsp"><button class="btn btn-signup">Register</button></a>
+             <span style="color: yellow"> Welcome : <a href="Profile.jsp"> <jsp:expression> name </jsp:expression> </a> </span>
+             <a href="Logout.jsp"><button class="btn btn-signup">Logout</button></a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div></div>
