@@ -13,6 +13,7 @@
         <filter-name> valfilterdemo </filter-name>
         <url-pattern> /reg </url-pattern>
     </filter-mapping>
+    
   <servlet>
         <servlet-name> regdemo </servlet-name>
         <servlet-class> com.sb.backend.Register </servlet-class>
@@ -22,6 +23,7 @@
         <url-pattern> /reg </url-pattern>
     </servlet-mapping>
     
+    
     <servlet>
         <servlet-name> logindemo </servlet-name>
         <servlet-class> com.sb.backend.Login </servlet-class>
@@ -30,6 +32,8 @@
         <servlet-name> logindemo </servlet-name>
         <url-pattern> /login </url-pattern>
     </servlet-mapping>
+    
+    
     <servlet>
         <servlet-name> logoutdemo </servlet-name>
         <servlet-class> com.sb.backend.Login </servlet-class>

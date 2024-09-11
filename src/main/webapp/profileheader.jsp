@@ -1,10 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <jsp:scriptlet>
+    String name=(String)session.getAttribute("session_name");
+    String gender=(String)session.getAttribute("session_gender");
+   </jsp:scriptlet>
+   
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>profile header</title>
+<title>Welcome : <jsp:expression> name </jsp:expression></title>
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 </head>
 <body>
@@ -29,7 +35,7 @@
             <button>Search</button>
         </div>
         <div class="auth-buttons">
-             <span style="color: yellow"> Welcome : <a href="Profile.jsp"> <jsp:expression> name </jsp:expression> </a> </span>
+             <span style="color: yellow"> Welcome : <a href="profile.jsp"> <jsp:expression> name </jsp:expression> </a> </span>
              <a href="Logout.jsp"><button class="btn btn-signup">Logout</button></a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">

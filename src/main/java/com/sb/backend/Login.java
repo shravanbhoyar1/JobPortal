@@ -5,6 +5,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,6 +25,9 @@ public class Login extends HttpServlet{
         String pass2=req.getParameter("pass1");
         String remme2=req.getParameter("rememberme1");
         
+        String name2="", gender2="", city2="", field2="";
+        
+        
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -36,7 +40,20 @@ public class Login extends HttpServlet{
             ResultSet rs=ps.executeQuery();
             if(rs.next())
             {
-                resp.sendRedirect("Profile.jsp");
+            	 name2=rs.getString("name");
+                 gender2=rs.getString("gender");
+                 city2=rs.getString("city");
+                 field2=rs.getString("fields");
+                 
+                 HttpSession session=req.getSession();
+                 session.setAttribute("session_name", name2);
+                 session.setAttribute("session_email", email2);
+                 session.setAttribute("session_gender", gender2);
+                 session.setAttribute("session_city", city2);
+                 session.setAttribute("session_fields", field2);
+                 
+                 resp.sendRedirect("profile.jsp");
+
             }
             else
             {
