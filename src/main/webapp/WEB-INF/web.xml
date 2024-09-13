@@ -43,4 +43,13 @@
         <url-pattern> /logout </url-pattern>
     </servlet-mapping>
     
+     <servlet>
+    <servlet-name> epademo </servlet-name>
+    <servlet-class>com.sb.backend.EditProfileAbout </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name> epademo </servlet-name>
+    <url-pattern> /EditProfileAbout </url-pattern>
+  </servlet-mapping>
+    
 </web-app>
